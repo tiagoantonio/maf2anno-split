@@ -1,0 +1,26 @@
+###############################################################################
+#
+# April 26 2016 
+#
+# maf2anno.split
+#
+# This Perl script splits a TGCA .maf file into separated sample files and 
+# annotate each of them using ANNOVAR (hg19) instaled at /share/apps/ANNOVAR.
+# Outputs: ANNOVAR output files and a log file containing the total number of 
+# samples annotated and total number of SNVs annotated.
+#
+# 
+# USAGE: perl maf2anno.split <TGCAfile.maf>
+# 
+# Required modules: IPC::System::Simple, Parallel::ForkManager, List::MoreUtils, 
+#                   List::Util
+#
+# If you have any question or suggestions please contact the author:
+#
+# Author: Tiago A. de Souza
+# tiagoantonio@gmail.com
+# github.com/tiagoantonio
+#
+# Licensed under MIT License
+#
+#################################################################################
